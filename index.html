@@ -51,6 +51,7 @@
 		}
 
 		.row-10 .column-2 .block-5 .button:hover,
+		.row-11 .column-1 .block-4 .button:hover,
 		.row-12 .column-2 .block-4 .button:hover,
 		.row-14 .column-1 .block-4 .button:hover,
 		.row-14 .column-2 .block-4 .button:hover,
@@ -81,6 +82,7 @@
 		@media (max-width:768px) {
 
 			.row-10 .column-2 .block-5.button_block .alignment .button,
+			.row-11 .column-1 .block-4.button_block .alignment .button,
 			.row-12 .column-2 .block-4.button_block .alignment .button,
 			.row-14 .column-1 .block-4.button_block .alignment .button,
 			.row-14 .column-2 .block-4.button_block .alignment .button,
@@ -101,6 +103,10 @@
 			.row-8 .column-2 .block-4.button_block .alignment .button,
 			.row-8 .column-2 .block-5.button_block .alignment .button {
 				display: inline-block !important;
+			}
+
+			.image_block div.fullWidth {
+				max-width: 100% !important;
 			}
 
 			.mobile_hide {
@@ -147,6 +153,7 @@
 			.row-14 .column-2 .block-5.spacer_block,
 			.row-15 .column-1 .block-6.spacer_block,
 			.row-15 .column-2 .block-1.spacer_block,
+			.row-3 .column-2 .block-1.spacer_block,
 			.row-6 .column-1 .block-1.spacer_block,
 			.row-6 .column-3 .block-1.spacer_block,
 			.row-7 .column-1 .block-1.spacer_block,
@@ -160,13 +167,14 @@
 				padding: 0 !important;
 			}
 
+			.row-12 .column-3 .block-2.image_block td.pad,
+			.row-2 .column-1 .block-2.image_block td.pad {
+				padding: 0 40px !important;
+			}
+
 			.row-2 .column-1 .block-3.image_block td.pad,
 			.row-2 .column-1 .block-4.image_block td.pad {
 				padding: 0 60px !important;
-			}
-
-			.row-2 .column-1 .block-2.image_block td.pad {
-				padding: 0 20px 0 25px !important;
 			}
 
 			.row-3 .column-3 .block-1.spacer_block {
@@ -192,8 +200,13 @@
 				padding: 10px 30px !important;
 			}
 
+			.row-4 .column-1 .block-2.spacer_block {
+				height: 10px !important;
+			}
+
 			.row-10 .column-2 .block-5.button_block td.pad,
 			.row-11 .column-1 .block-3.paragraph_block td.pad,
+			.row-11 .column-1 .block-4.button_block td.pad,
 			.row-12 .column-2 .block-4.button_block td.pad,
 			.row-14 .column-1 .block-2.paragraph_block td.pad,
 			.row-14 .column-1 .block-3.paragraph_block td.pad,
@@ -225,6 +238,7 @@
 			}
 
 			.row-10 .column-2 .block-5.button_block span,
+			.row-11 .column-1 .block-4.button_block span,
 			.row-12 .column-2 .block-4.button_block span,
 			.row-14 .column-1 .block-4.button_block span,
 			.row-14 .column-2 .block-4.button_block span,
@@ -249,6 +263,7 @@
 			}
 
 			.row-10 .column-2 .block-5.button_block .alignment,
+			.row-11 .column-1 .block-4.button_block .alignment,
 			.row-12 .column-2 .block-2.heading_block h1,
 			.row-12 .column-2 .block-4.button_block .alignment,
 			.row-14 .column-1 .block-4.button_block .alignment,
@@ -274,10 +289,6 @@
 				text-align: center !important;
 			}
 
-			.row-4 .column-1 .block-2.spacer_block {
-				height: 10px !important;
-			}
-
 			.row-10 .column-1 .block-1.spacer_block,
 			.row-11 .column-1 .block-1.spacer_block,
 			.row-12 .column-2 .block-1.spacer_block {
@@ -287,10 +298,6 @@
 			.row-11 .column-1 .block-3.paragraph_block td.pad>div {
 				text-align: center !important;
 				font-size: 16px !important;
-			}
-
-			.row-12 .column-3 .block-2.image_block td.pad {
-				padding: 0 40px !important;
 			}
 
 			.row-14 .column-1 .block-2.paragraph_block td.pad>div,
@@ -308,12 +315,16 @@
 			}
 
 			.row-6 .column-1 {
-				padding: 30px 0 20px !important;
+				padding: 0 0 20px !important;
 			}
 
 			.row-6 .column-2,
 			.row-8 .column-2 {
 				padding: 5px 20px !important;
+			}
+
+			.row-8 .column-1 {
+				padding: 0 0 5px !important;
 			}
 
 			.row-15 .column-1,
@@ -342,7 +353,7 @@
 														<tr>
 															<td class="pad" style="padding-right:15px;width:100%;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 207.5px;"><a href="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/9w0/2l1/1pf/landing-page_elements-03.gif" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/9w0/2l1/1pf/landing-page_elements-03.gif" style="display: block; height: auto; border: 0; width: 100%;" width="207.5" alt title height="auto"></a></div>
+																	<div style="max-width: 207.5px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsG_mk52X7xWE8tdM6hm14wQynCAaf-CERMhCPESuQOMPdCw/viewform?usp=header" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/9w0/2l1/1pf/landing-page_elements-03.gif" style="display: block; height: auto; border: 0; width: 100%;" width="207.5" alt title height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -367,7 +378,7 @@
 														<tr>
 															<td class="pad" style="width:100%;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 222.5px;"><a href="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/9w0/2l1/1pf/landing-page_elements-03.gif" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/6zj/bb0/yhm/landing-page_elements-04.gif" style="display: block; height: auto; border: 0; width: 100%;" width="222.5" alt title height="auto"></a></div>
+																	<div style="max-width: 222.5px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsG_mk52X7xWE8tdM6hm14wQynCAaf-CERMhCPESuQOMPdCw/viewform?usp=header" target="_blank"><img src="https://media.beefree.cloud/pub/bfra/s4npm4ba/hsw/xz1/e6b/%E5%AE%8C%E6%88%90%E4%BB%BB%E5%8B%99%E5%8B%95%E7%95%AB.gif" style="display: block; height: auto; border: 0; width: 100%;" width="222.5" alt title height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -377,7 +388,7 @@
 														<tr>
 															<td class="pad" style="padding-right:30px;width:100%;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 192.5px;"><a href="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/9w0/2l1/1pf/landing-page_elements-03.gif" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/ut9/6fd/yc3/landing-page_elements-05.gif" style="display: block; height: auto; border: 0; width: 100%;" width="192.5" alt title height="auto"></a></div>
+																	<div style="max-width: 192.5px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsG_mk52X7xWE8tdM6hm14wQynCAaf-CERMhCPESuQOMPdCw/viewform?usp=header" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/ut9/6fd/yc3/landing-page_elements-05.gif" style="display: block; height: auto; border: 0; width: 100%;" width="192.5" alt title height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -412,7 +423,7 @@
 														<tr>
 															<td class="pad" style="width:100%;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 435px;"><a href="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/9w0/2l1/1pf/landing-page_elements-03.gif" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/6zj/bb0/yhm/landing-page_elements-04.gif" style="display: block; height: auto; border: 0; width: 100%;" width="435" alt title height="auto"></a></div>
+																	<div style="max-width: 435px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsG_mk52X7xWE8tdM6hm14wQynCAaf-CERMhCPESuQOMPdCw/viewform?usp=header" target="_blank"><img src="https://media.beefree.cloud/pub/bfra/s4npm4ba/hsw/xz1/e6b/%E5%AE%8C%E6%88%90%E4%BB%BB%E5%8B%99%E5%8B%95%E7%95%AB.gif" style="display: block; height: auto; border: 0; width: 100%;" width="435" alt title height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -421,7 +432,7 @@
 														<tr>
 															<td class="pad" style="padding-right:15px;width:100%;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 380px;"><a href="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/9w0/2l1/1pf/landing-page_elements-03.gif" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/9w0/2l1/1pf/landing-page_elements-03.gif" style="display: block; height: auto; border: 0; width: 100%;" width="380" alt title height="auto"></a></div>
+																	<div style="max-width: 380px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsG_mk52X7xWE8tdM6hm14wQynCAaf-CERMhCPESuQOMPdCw/viewform?usp=header" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/9w0/2l1/1pf/landing-page_elements-03.gif" style="display: block; height: auto; border: 0; width: 100%;" width="380" alt title height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -430,7 +441,7 @@
 														<tr>
 															<td class="pad" style="padding-right:30px;width:100%;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 376px;"><a href="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/9w0/2l1/1pf/landing-page_elements-03.gif" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/ut9/6fd/yc3/landing-page_elements-05.gif" style="display: block; height: auto; border: 0; width: 100%;" width="376" alt title height="auto"></a></div>
+																	<div style="max-width: 376px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsG_mk52X7xWE8tdM6hm14wQynCAaf-CERMhCPESuQOMPdCw/viewform?usp=header" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/s4npm4ba/ut9/6fd/yc3/landing-page_elements-05.gif" style="display: block; height: auto; border: 0; width: 100%;" width="376" alt title height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -466,9 +477,9 @@
 													<div class="spacer_block block-1" style="height:60px;line-height:60px;font-size:1px;">&#8202;</div>
 													<table class="image_block block-2 desktop_hide" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-hide: all; display: none; max-height: 0; overflow: hidden;">
 														<tr>
-															<td class="pad" style="width:100%;">
+															<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 100px;"><img src="https://media.beefree.cloud/pub/bfra/s4npm4ba/j8s/m1d/u91/%E9%82%8A%E6%A1%86%E5%8B%95%E7%95%AB_%E6%A9%AB.gif" style="display: block; height: auto; border: 0; width: 100%;" width="100" alt title height="auto"></div>
+																	<div class="fullWidth" style="max-width: 1px;"><img src="https://media.beefree.cloud/pub/bfra/s4npm4ba/j8s/m1d/u91/%E9%82%8A%E6%A1%86%E5%8B%95%E7%95%AB_%E6%A9%AB.gif" style="display: block; height: auto; border: 0; width: 100%;" width="1" alt title height="auto"></div>
 																</div>
 															</td>
 														</tr>
@@ -821,7 +832,7 @@
 										<tbody>
 											<tr>
 												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top;">
-													<div class="spacer_block block-1" style="height:60px;line-height:60px;font-size:1px;">&#8202;</div>
+													<div class="spacer_block block-1" style="height:25px;line-height:25px;font-size:1px;">&#8202;</div>
 													<table class="heading_block block-2" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
 															<td class="pad">
@@ -842,7 +853,20 @@
 															</td>
 														</tr>
 													</table>
-													<div class="spacer_block block-4" style="height:60px;line-height:60px;font-size:1px;">&#8202;</div>
+													<table class="button_block block-4" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad">
+																<div class="alignment" align="center"><!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"   style="height:41px;width:215px;v-text-anchor:middle;" arcsize="20%" fillcolor="#d9e020">
+<v:stroke dashstyle="Solid" weight="2px" color="#000000"/>
+<w:anchorlock/>
+<v:textbox inset="0px,0px,0px,0px">
+<center dir="false" style="color:#000000;font-family:sans-serif;font-size:16px">
+<![endif]--><span class="button" style="background-color: #d9e020; mso-shading: transparent; border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-radius: 9px; border-right: 2px solid #000000; border-top: 2px solid #000000; color: #000000; display: inline-block; font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; mso-border-alt: none; padding-bottom: 5px; padding-top: 5px; padding-left: 20px; padding-right: 20px; text-align: center; width: auto; word-break: keep-all; letter-spacing: normal;"><span style="word-break: break-word; line-height: 32px;">報名大學團契聯合迎新</span></span><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></div>
+															</td>
+														</tr>
+													</table>
+													<div class="spacer_block block-5" style="height:60px;line-height:60px;font-size:1px;">&#8202;</div>
 												</td>
 											</tr>
 										</tbody>
